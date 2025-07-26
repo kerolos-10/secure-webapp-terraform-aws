@@ -1,0 +1,14 @@
+# sensitive files
+*.pem
+*.key
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+
+# editor/system files
+*.log
+*.swp
+*.bak
+.DS_Store
+
