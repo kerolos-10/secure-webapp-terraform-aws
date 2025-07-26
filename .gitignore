@@ -1,14 +1,31 @@
-# sensitive files
-*.pem
-*.key
+# Terraform files
 *.tfstate
 *.tfstate.*
+*.tfvars
+*.tfvars.json
 .terraform/
+.terraform.lock.hcl
 crash.log
+crash.*.log
 
-# editor/system files
-*.log
+# AWS files
+*.pem
+*.key
+aws-credentials.txt
+
+# IDE files
+.vscode/
+.idea/
 *.swp
-*.bak
-.DS_Store
+*.swo
 
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output files
+all-ips.txt
+
+# Backup files
+*.backup
+*.bak
