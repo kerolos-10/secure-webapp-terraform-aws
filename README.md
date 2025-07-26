@@ -219,7 +219,31 @@ Configures security rules for different tiers:
 - **Bastion Host**: SSH jumpbox to access private EC2 instances securely.
 
 ---
+## AWS Console Some Used Resources Screens
+  ## EC2s
+  ![Architecture Diagram](docs/ec2s.png)
 
+ ---
+ 
+  ## Subnets
+  ![Architecture Diagram](docs/subnets.png)
+
+  ---
+
+  ## Load Blancers
+  ![Architecture Diagram](docs/albs.png)
+
+  ---
+
+  ## Security Groups
+  ![Architecture Diagram](docs/sgs.png)
+
+  ---
+
+  ## Workspace
+  ![Architecture Diagram](docs/workspace.png)
+
+  
 
 ##  Outputs
 
@@ -230,11 +254,13 @@ After successful deployment, you'll get:
 - Backend server private IPs
 - Proxy server public IPs
   
-**output from frist basckend ec2**
+### Output from frist basckend ec2
+
   ![Architecture Diagram](docs/output-ec2_1.png)
   
   ---
-**output from second basckend ec2**
+  
+### Output from second basckend ec2
   ![Architecture Diagram](docs/output-ec2_2.png)
 
 
@@ -255,7 +281,7 @@ After successful deployment, you'll get:
 3. Verify that traffic is being routed through proxies to backend servers
 
 
-## 📈 Monitoring & Logging
+## Monitoring & Logging
 
 - CloudWatch metrics for EC2 instances and load balancers
 - ALB access logs stored in S3
@@ -289,12 +315,15 @@ terraform destroy
 
 **⭐ If this project helped you, please give it a star ⭐**
 
-## Support & Contact
-Feel free to reach out if you have questions or want to collaborate:
+##  Support & Contact
 
-**👨‍💻 Name:** Kerolos Mamdouh
-**📍 Location:** Cairo, Egypt
-**📧 Email:** kerolosmamdouh20@gmail.com
-**💼 LinkedIn:** linkedin.com/in/kerolos-mamdouh-90a11b26b
-**💻 GitHub:** github.com/kerolos-10
-**I’m a DevOps Engineer & RHCSA-certified System Administrator, passionate about building infrastructure, automation, and cloud-native solutions**
+Feel free to reach out if you have questions, feedback, or want to collaborate on DevOps, Cloud, or Infrastructure projects:
+
+- 👨‍💻 **Name:** Kerolos Mamdouh  
+- 📍 **Location:** Cairo, Egypt  
+- 📧 **Email:** [kerolosmamdouh20@gmail.com](mailto:kerolosmamdouh20@gmail.com)  
+- 💼 **LinkedIn:** [linkedin.com/in/kerolos-mamdouh-90a11b26b](https://www.linkedin.com/in/kerolos-mamdouh-90a11b26b)  
+- 💻 **GitHub:** [github.com/kerolos-10](https://github.com/kerolos-10)  
+
+> I’m a **DevOps Engineer** and **RHCSA-certified System Administrator**, passionate about building infrastructure, automation, and cloud-native solutions.
+
