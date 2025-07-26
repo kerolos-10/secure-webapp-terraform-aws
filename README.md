@@ -142,7 +142,7 @@ terraform plan
 terraform apply
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Backend Configuration
 
