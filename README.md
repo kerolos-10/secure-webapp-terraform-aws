@@ -265,30 +265,14 @@ To destroy the infrastructure:
 terraform destroy
 ```
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](../../issues) section
-2. Create a new issue with detailed information
-3. Contact the maintainer
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- AWS Documentation
-- Terraform Community
-- Open Source Contributors
-
-## 📚 Additional Resources
-
-- [Terraform AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-- [Terraform Best Practices](https://www.terraform.io/docs/cloud/guides/recommended-practices/index.html)
-
----
-
 **⭐ If this project helped you, please give it a star! ⭐**
+
+## Support & Contact
+Feel free to reach out if you have questions or want to collaborate:
+
+👨‍💻 Name: Kerolos Mamdouh
+📍 Location: Cairo, Egypt
+📧 Email: kerolosmamdouh20@gmail.com
+💼 LinkedIn: linkedin.com/in/kerolos-mamdouh-90a11b26b
+💻 GitHub: github.com/kerolos-10
+## I’m a DevOps Engineer & RHCSA-certified System Administrator, passionate about building infrastructure, automation, and cloud-native solutions
