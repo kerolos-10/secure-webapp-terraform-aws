@@ -30,21 +30,18 @@ resource "aws_instance" "backend" {
   # Install Flask and run app
   provisioner "remote-exec" {
 inline = [
-  "sudo yum install -y python3 -q",                         # تثبيت بايثون بدون مشاكل
-  "command -v pip3 >/dev/null || sudo yum install -y python3-pip",  # تأكد إن pip موجود
-  "pip3 install --quiet flask",                             # تثبيت Flask
+  "sudo yum install -y python3 -q",                        
+  "command -v pip3 >/dev/null || sudo yum install -y python3-pip", 
+  "pip3 install --quiet flask",                           
 
-  # إنشاء مجلد التطبيق ونقل الكود
   "sudo mkdir -p /opt/flask-app",
   "sudo cp /home/ec2-user/app.py /opt/flask-app/app.py",
   "sudo chown ec2-user:ec2-user /opt/flask-app/app.py",
 
-  # إنشاء خدمة systemd للتشغيل التلقائي
   "sudo tee /etc/systemd/system/flask.service > /dev/null <<EOF\n[Unit]\nDescription=Kerolos Flask App\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/python3 /opt/flask-app/app.py\nRestart=always\nUser=ec2-user\n\n[Install]\nWantedBy=multi-user.target\nEOF",
 
-  "sudo systemctl daemon-reload",         # تحديث النظام بالخدمة الجديدة
-  "sudo systemctl enable flask",          # تفعيلها تلقائيًا مع البوت
-  "sudo systemctl start flask",           # تشغيلها الآن
+  "sudo systemctl daemon-reload",       
+  "sudo systemctl enable flask",         # تشغيلها الآن
 ]
 
 
